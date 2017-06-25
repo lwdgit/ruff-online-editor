@@ -13,5 +13,5 @@
 
 > 你也可以直接将 https://raw.githubusercontent.com/lwdgit/ruff-online-editor/master/src/index.js 下载到你的工程目录直接测试。
  
-
+> 注意: 测试代码不需要再放在 `$.ready`和`$.end`里面了，直接编写目标代码即可。
 
