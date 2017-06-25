@@ -11,6 +11,7 @@
 
 ```
 
+> 你也可以直接将 https://raw.githubusercontent.com/lwdgit/ruff-online-editor/master/src/index.js 下载到你的工程目录直接测试。
  
 
 
