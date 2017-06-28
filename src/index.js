@@ -83,7 +83,7 @@ function htmlTemplate(msg) {
     <script src=https://cdn.jsdelivr.net/ace/1.2.6/min/ace.js></script>\
 </head>\
 <body>\
-输出信息:<textarea id=output readOnly>{outputInfo}</textarea><br />\
+输出信息:<textarea id=output readOnly>hello world!</textarea><br />\
 <form id=editor-form method=POST>\
     <div style=\"min-height: 300px;width:100%;position:relative;\"><textarea name=script style=\"width:inherit;min-height: inherit\" placeholder=请输入测试代码></textarea>\
     <div id=editor style=\"top:0;width:inherit;position:absolute\"></div>\
@@ -170,7 +170,7 @@ setInterval(function() {\n\
     initEditor();\
     </script>\
 </body>\
-</html>".replace('{outputInfo}', msg || '');
+</html>";
 }
 
 function exec(command, args, resolve, reject) {
