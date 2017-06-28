@@ -46,6 +46,7 @@ function htmlTemplate(msg) {
 <html lang=en>\
 <head>\
     <meta charset=UTF-8>\
+    <meta name=viewport content=\"width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no\">\
     <title>Ruff开发面版</title>\
     <style>\
         button {\
@@ -137,6 +138,7 @@ function htmlTemplate(msg) {
     }\
     showLog();\
     function initEditor() {\
+        if (!window.ace) return;\
         var editor = window.editor = ace.edit('editor');\
         document.getElementById('editor').style.height = document.forms['editor-form'].script.offsetHeight + 'px';\
         var highlighter = ace.edit('highlighter');\
