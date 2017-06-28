@@ -114,7 +114,7 @@ function htmlTemplate(msg) {
         var form = document.forms['editor-form'];\
         var el = form.script;\
         if (window.editor) el.value = editor.getValue();\
-        el.value.length < 2048 && history.replaceState({}, null, location.protocol + '//' + location.host + '?script' + encodeURIComponent(el.value));\
+        el.value.length < 2048 && history.replaceState({}, null, location.protocol + '//' + location.host + '?script=' + encodeURIComponent(el.value));\
         request('/', {script: el.value});\
     }\
     var sleep = (ms) => {return new Promise(resolve => setTimeout(resolve, ms))};\
